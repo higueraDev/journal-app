@@ -15,3 +15,7 @@ export const UPDATE_ENTRY = (state,entry) =>{
 export const DELETE_ENTRY = (state,id) =>{
     state.entries = state.entries.filter((e)=>e.id != id);
 }
+
+export const CLEAR_ENTRIES = (state) => {
+	state.entries = [];
+};
